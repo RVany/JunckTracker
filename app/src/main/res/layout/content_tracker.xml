@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TrackerActivity"
+    tools:showIn="@layout/activity_tracker">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Green4"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:id="@+id/user_header_layout_ID"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="@dimen/body_margin"
+                android:layout_marginTop="11dp"
+                android:id="@+id/daily_details_layout_ID"/>
+            <GridLayout
+                android:id="@+id/daily_grid_layout_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="32"
+                android:rowCount="26">
+            </GridLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:id="@+id/daily_header_layout_ID"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:text="@string/yearly_tracker_text"
+                android:paddingTop="10sp"
+                android:id="@+id/tracker_yearly_text"/>
+            <GridLayout
+                android:id="@+id/yearly_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="12"
+                android:rowCount="3">
+            </GridLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
